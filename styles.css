@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family:sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* <-----------------------------------------------------> */
+
+#navbar{
+    align-items: center;
+    width: 100vw;
+    min-height: 65px;
+    background-color: #be3144;
+    justify-content: flex-end;
+    font-weight: 550;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav-link{
+    margin-right: 20px; 
+}
+.nav-link a{
+    min-height: 65px;
+    color: white;
+    font-size: 1.4rem;
+    padding-inline: 15px;
+    padding-block: 20px;
+}
+.nav-link:hover{
+    background-color: #45567d;
+}
+
+.hero-section{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+.hero-section h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 550;
+}
+.hero-section h2{
+    color: #be3144;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#projects{
+    background-color: #45567d;
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    padding-inline: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+#projects h2{
+    max-width: 640px;
+    border-bottom: 0.2rem solid white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 8px;
+    justify-content: center;
+}
+.project-heading{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.project-card{
+    background-color: #303841;
+    max-width: 30%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.project-card a{
+    color: white;
+}
+.project-card img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+    background-size: cover;
+    background-size: contain;
+    max-width: 100%;
+}
+.project-card p{
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.project-items{
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.project-button{
+    background-color: #303841;
+    padding: 20px;
+    color: white;
+    border-radius: 3px;
+    transition: background-color 0.4s ease-out;
+}
+.project-button a{
+    font-size: 1.3rem;
+}
+
+.project-button:hover{
+    background-color: #be3144;
+}
+
+.contact{
+    flex-direction: column;
+    justify-content: center;
+    background-color: #303841;
+    height: 400px;
+    width: 100vw;
+    gap: 15px;
+    border-bottom: 0.2rem solid #be3144;
+    
+}
+.contact a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration:underline;
+}
+.contact h1{
+    font-size: 4rem;
+    color: white;
+}
+.contact h3{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+}
+.socials{
+    padding-top: 60px;
+    gap: 100px;
+}
+.footer{
+    align-items: center;
+    width: 100vw;
+    min-height: 65px;
+    color: white;
+    background-color: #be3144;
+    justify-content: center;
+    font-weight: 550;
+}
+
+
+
+/* <-------------------------------------------> */
+@media (max-width: 550px) {
+    #navbar{
+        width: 100vw;
+    }
+    .project-card{
+        min-width: 100%;
+    }
+    .hero-section{
+        width: 100vw;
+    }
+
+    .hero-section h1{
+        font-size: 3rem;
+    }
+    .hero-section h2{
+        font-size: 2rem;
+    }
+    #projects h2{
+        font-size: 1.5rem;
+        max-width: 100%;
+        min-width: 370px;
+    }
+    #projects{
+        padding-inline: 20px;
+        padding-bottom: 50px;
+    }
+    .project-items{
+        padding-bottom: 60px;
+    }
+    .contact h1{
+        font-size: 2.2rem;
+    }  
+    .contact{
+        height: 200px;
+    }
+    .socials{
+        padding-top: 20px;
+    }
+}
